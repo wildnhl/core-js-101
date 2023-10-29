@@ -248,9 +248,9 @@ function encodeToRot13(str) {
   const normal = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
   const dev = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
   let final = '';
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i += 1) {
     const find = normal.indexOf(str[i]);
-    final = final + dev[find];
+    final += dev[find];
   }
   return final;
 }
