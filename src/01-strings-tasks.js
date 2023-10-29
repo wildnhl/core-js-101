@@ -245,8 +245,8 @@ function getRectangleString(width, height) {
  *
  */
 function encodeToRot13(str) {
-  const normal = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-  const dev = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+  const normal = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz !.?';
+  const dev = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm !.?';
   let final = '';
   for (let i = 0; i < str.length; i += 1) {
     const find = normal.indexOf(str[i]);
